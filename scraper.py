@@ -15,7 +15,7 @@ import random
 
 ##starting views are 187, 72, 49
 
-def setup_driver(headless=False, driver_type=CHROME_DRIVER):
+def setup_driver(headless=True, driver_type=CHROME_DRIVER):
     if 'chrome' in driver_type.lower():
         options = ChromeOptions()
         options.add_argument('--ignore-certificate-errors')
